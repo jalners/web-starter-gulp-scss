@@ -1,0 +1,28 @@
+{
+  "name": "web-starter-gulp-scss",
+  "version": "0.1.0",
+  "authors": [
+    "Alexey Neretin <jalners@yandex.ru>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jalners/web-starter-gulp-scss",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "devicejs": "~0.2.7",
+    "jquery": "~1.*",
+    "bourbon": "~4.2.3",
+    "platform": "https://github.com/bestiejs/platform.js.git",
+    "normalize.css": "~3.0.3"
+  },
+  "dependencies": {
+    "html5shiv": "~3.7.2",
+    "respond": "~1.4.2",
+    "modernizr": "~2.8.3"
+  }
+}
