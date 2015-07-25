@@ -3,11 +3,13 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     sourcemaps = require('gulp-sourcemaps'),
+    plumber = require('gulp-plumber'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
 gulp.task('scripts', function () {
   gulp.src(config.src)
+    .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(concat('main.js'))
     .pipe(uglify())
